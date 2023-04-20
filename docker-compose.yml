@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  db:
+    build: .
+    container_name: howzat
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: creditcard
+    ports:
+      - "3307:3306"
+    volumes:
+      - howzat:/var/lib/mysql
+    
+volumes:
+  howzat:
+  
+
+
+    
