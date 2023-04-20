@@ -1,9 +1,10 @@
 # Docker and MySQL DB
 
-#### Table of Contents
-1. [Folder Structure](#folder-structure)
-2. [Docker](#docker)
-3. [MySQL](#mysql-db)
+**Table of Contents**
+* [Folder Structure](#folder-structure)
+* [Docker](#docker)
+    * [Commands](#commands)
+* [MySQL](#mysql-db)
 
 ## Folder Structure
 ```sh
@@ -29,7 +30,7 @@ Database
 It is assumed you already have [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed or have installed both with [Docker Desktop](https://www.docker.com/products/docker-desktop), and are familiar with how to use them. If you are not, please read the documentation for each tool before proceeding.
 
 #### Commands
-I have written some bash scripts to make it easier to run the docker commands. The following commands are run from the `./Database/admin-scripts` directory. If you are using powershell, you can run the scripts without needing the bash tag. i.e. `./build.sh` instead of `bash ./build.sh`
+I have written some shell scripts to make it easier to setup the database in docker. The following commands are located here `./Database/admin-scripts`, though they can be run from any location. If you are using powershell, you need to run the scripts without the bash tag. i.e. `./build.sh` instead of `bash ./build.sh`
 
 Start the container:
 ```bash
